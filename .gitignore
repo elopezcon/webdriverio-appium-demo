@@ -4,6 +4,8 @@ node_modules
 test-reports
 allure
 node_modules/
+reports/
+allure-reports/
 
 # local env files
 .env.local
