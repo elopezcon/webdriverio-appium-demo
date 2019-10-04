@@ -2,16 +2,10 @@
 
 The following instruccions are meant to serve as a referece for the set up of WebdriverIO and Appium to run automated end-to-end tests in a local machine.
 
-The following steps must be accomplished in order to be able to execute the automated tests:
-Check the value of JAVA_HOME:
-```
-echo $JAVA_HOME
-```
-
 
 ## Install the latest version of Java
 - [ ] Navigate to [Java SE Downloads](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and download the latest version of Java.
-- [ ] It is required to add a JAVA_HOME to the PATH variable. From terminal type the following command: 
+- [ ] It isc required to add a JAVA_HOME to the PATH variable. From terminal type the following command: 
 ```
 open -e ~/.bash_profile
 ```
@@ -33,7 +27,7 @@ java -version
 
 - [ ] Add the ANDROID_HOME path to your PATH variable. From terminal type the following command: 
 ```
-open -e ~/.bash_profile and add the following:
+open -e ~/.bash_profile
 ```
 - [ ] In the text editor add the variable:
 ```
