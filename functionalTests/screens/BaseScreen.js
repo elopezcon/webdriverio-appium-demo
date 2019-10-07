@@ -13,7 +13,11 @@ export default class BaseScreen {
      */
     elementTap (selector) {
         this.waitForElement(selector)
-        this.find(selector).click()
+        driver.touchAction({
+            action: 'tap',
+            element: this.find(selector)
+          })
+        //this.find(selector).click()
     }
 
     /**
