@@ -1,7 +1,10 @@
+const dotenv = require('dotenv')
 const { config } = require('./wdio.shared.conf')
 
-config.user = 'eduardo477'
-config.key = 'cRnaDyBopbq2EVKMdzrk'
+dotenv.config({ path: './.env' })
+
+config.user = process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME'
+config.key = process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY'
 // ============
 // Specs
 // ============
@@ -27,8 +30,16 @@ config.capabilities = [
         maxInstances: 3,
         orientation: 'PORTRAIT',
         newCommandTimeout: 180,
-        app: '/Users/eduardo.contreras/Documents/WizelineGitHub/Fox/Android/app-release.apk',
-        build: 'webdriver-browserstack'
+        app_url: 'bs://4a7889d52224f07e757249e9fc1c47734c5e33b4',
+        custom_id: 'sample_app',
+        name: 'single_appium_test',
+        build: 'fox-sample-app',
+        debug: true,
+        unicodeKeyboard: true,
+        resetKeyboard: true,
+        'browserstack.appium_version': '1.15',
+        'browserstack.debug': true,
+        'browserstack.video': true
     },
 ]
 
