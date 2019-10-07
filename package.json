@@ -4,7 +4,7 @@
   "description": "poc using  webdriverio and appium for sdk sample app automation ",
   "main": "index.js",
   "scripts": {
-    "allure:reporter": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "allure:reporter": "allure generate ./reports/allure-results --clean -o ./reports/allure-report && allure open ./reports/allure-report",
     "e2e:android:app": "./node_modules/.bin/wdio ./config/wdio.android.app.conf.js",
     "e2e:android:app:bs": "./node_modules/.bin/wdio ./config/wdio.adroid.bs.app.conf.js",
     "e2e:ios:app": "./node_modules/.bin/wdio ./config/wdio.ios.app.conf.js",
@@ -29,7 +29,7 @@
     "@wdio/sync": "5.13.2",
     "allure-commandline": "^2.13.0",
     "appium-doctor": "1.12.0",
-    "babel-eslint": "10.0.3",
+    "babel-eslint": "^10.0.3",
     "chai": "4.2.0",
     "dotenv": "^8.1.0",
     "eslint": "6.5.0",
