@@ -7,7 +7,7 @@ import splashScreen from '../screens/SplashScreen'
 import updateScreen from '../screens/UpdateScreen'
 
 beforeEach(function () {
-    browser.reset()
+    driver.reset()
 })
 
 describe('Login functionality for sample app: ', () => {
