@@ -1,7 +1,7 @@
 import CommonsScreen from './CommonsScreen'
 
 const ELEMENTS = {
-    LOGOUT_CTA: 'id=com.fox.android.foxkit.profile.demo:id/tv_signin',
+    LOGOUT_CTA: 'id=com.fox.android.foxkit.profile.demo:id/tv_logout',
     PROFILE_ID: 'id=com.fox.android.foxkit.profile.demo:id/tv_anonymous_login',
     UPDATE_CTA: 'id=com.fox.android.foxkit.profile.demo:id/tv_signup'
 }
