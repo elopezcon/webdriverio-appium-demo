@@ -1,13 +1,14 @@
+const dotenv = require('dotenv')
+
+dotenv.config({ path: './.env' })
+
 let retries
 
 if (process.env.NODE_ENV !== 'local') {
-    retries = 2
+    retries = 1
 }
 
 exports.config = {
-
-    user: process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
-    key: process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
     // ====================
     // Runner and framework configuration
     // ====================
