@@ -5,7 +5,7 @@ test-reports
 allure
 node_modules/
 reports/
-allure-reports/
+allure-report/
 
 # local env files
 .env.local
@@ -26,3 +26,4 @@ res.xml
 *.njsproj
 *.sln
 *.sw*
+node_modules
