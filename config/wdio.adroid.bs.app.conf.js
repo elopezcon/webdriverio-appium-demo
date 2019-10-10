@@ -9,11 +9,11 @@ config.key = process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY'
 // Specs
 // ============
 config.specs = [
-    './functionalTests/test/*.js',
+    './functionalTests/test/android/*.js',
 ]
 // Patterns to exclude.
 config.exclude = [
-    './functionalTests/screens/*Page.js',
+    './functionalTests/screens/*.js',
 ]
 
 // ============

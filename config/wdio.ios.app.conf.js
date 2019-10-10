@@ -4,11 +4,11 @@ const { config } = require('./wdio.shared.conf')
 // Specify Test Files
 // ====================
 config.specs = [
-    './functionalTests/test/*.js',
+    './functionalTests/test/swift/*.js',
 ]
 // Patterns to exclude.
 config.exclude = [
-    './functionalTests/screens/*Page.js',
+    './functionalTests/screens/*.js',
 ]
 
 // ====================
@@ -24,7 +24,7 @@ config.capabilities = [
         'appium:automationName': 'XCUITest',
         'appium:unicodeKeyboard': true,
         'appium:resetKeyboard': true,
-        'appium:app': '/Users/eduardo.contreras/Documents/WizelineGitHub/Fox/Android/app-release.apk'
+        'appium:app': '/Users/eduardo.contreras/Desktop/ProfileSDKExample.zip'
     },
 ]
 
