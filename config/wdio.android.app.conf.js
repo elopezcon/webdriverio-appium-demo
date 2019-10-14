@@ -1,4 +1,8 @@
+const { join } = require('path')
+const dotenv = require('dotenv')
 const { config } = require('./wdio.shared.conf')
+
+dotenv.config({ path: '../.env' })
 
 // ====================
 // Specify Test Files
@@ -24,7 +28,7 @@ config.capabilities = [
         'appium:automationName': 'UIAutomator2',
         'appium:unicodeKeyboard': true,
         'appium:resetKeyboard': true,
-        'appium:app': '/Users/eduardo.contreras/Documents/WizelineGitHub/Fox/Android/app-release.apk'
+        'appium:app': process.env.APP_PATH_ANDROID || join(process.cwd(), './apps/app-release.apk')
     },
 ]
 
