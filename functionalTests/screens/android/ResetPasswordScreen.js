@@ -1,4 +1,4 @@
-import CommonsScreen from './CommonsScreen'
+import CommonsScreen from '../android/CommonsScreen'
 
 const ELEMENTS = {
     RESET_PASSWORD: 'android=new UiSelector().text("Email").className("android.widget.EditText")',

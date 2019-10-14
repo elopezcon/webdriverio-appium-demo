@@ -1,4 +1,4 @@
-import CommonsScreen from './CommonsScreen'
+import CommonsScreen from '../android/CommonsScreen'
 
 const ELEMENTS = {
     LOGOUT_CTA: 'id=com.fox.android.foxkit.profile.demo:id/tv_logout',

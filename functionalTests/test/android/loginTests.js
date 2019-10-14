@@ -1,10 +1,10 @@
-import { USER_CREDENTIALS, USER_PASSWORD, VALID_FB_TOKEN, ALERT_SUCCESS_TEXT, ALERT_ERROR_TEXT, INVALID_USER_CREDENTIALS, INVALID_USER_PASSWORD } from '../utils/constants'
+import { USER_CREDENTIALS, USER_PASSWORD, VALID_FB_TOKEN, ALERT_SUCCESS_TEXT, ALERT_ERROR_TEXT, INVALID_USER_CREDENTIALS, INVALID_USER_PASSWORD } from '../../utils/constants'
 import { assert } from 'chai'
 
-import loginScreen from '../screens/LoginScreen'
-import resetPasswordScreen from '../screens/ResetPasswordScreen'
-import splashScreen from '../screens/SplashScreen'
-import updateScreen from '../screens/UpdateScreen'
+import loginScreen from '../../screens/android/LoginScreen'
+import resetPasswordScreen from '../../screens/android/ResetPasswordScreen'
+import splashScreen from '../../screens/android/SplashScreen'
+import updateScreen from '../../screens/android/UpdateScreen'
 
 beforeEach(function () {
     driver.reset()

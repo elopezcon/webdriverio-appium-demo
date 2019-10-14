@@ -7,7 +7,8 @@
     "allure:reporter": "allure generate ./reports/allure-results --clean -o ./reports/allure-report && allure open ./reports/allure-report",
     "e2e:android:app": "./node_modules/.bin/wdio ./config/wdio.android.app.conf.js",
     "e2e:android:app:bs": "./node_modules/.bin/wdio ./config/wdio.adroid.bs.app.conf.js",
-    "e2e:ios:app": "./node_modules/.bin/wdio ./config/wdio.ios.app.conf.js",
+    "e2e:swift:app": "./node_modules/.bin/wdio ./config/wdio.ios.app.conf.js",
+    "e2e:swift:app:bs": "./node_modules/.bin/wdio ./config/wdio.ios.bs.app.conf.js",
     "lint": "eslint --fix ./functionalTests/",
     "test": "wdio"
   },

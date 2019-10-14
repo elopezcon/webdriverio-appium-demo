@@ -9,7 +9,7 @@ config.key = process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY'
 // Specs
 // ============
 config.specs = [
-    './functionalTests/test/android/*.js',
+    './functionalTests/test/swift/*.js',
 ]
 // Patterns to exclude.
 config.exclude = [
@@ -23,16 +23,17 @@ config.services = ['browserstack']
 config.host = 'hub.browserstack.com'
 config.capabilities = [
     {
-        deviceName: 'Samsung Galaxy S9',
-        automationName: 'UiAutomator2',
-        platformName: 'Android',
+        deviceName: 'iPhone X',
+        os_version: '11',
+        automationName: 'XCUITest',
+        platformName: 'iOS',
         idleTimeout: 180,
         maxInstances: 3,
         orientation: 'PORTRAIT',
         newCommandTimeout: 180,
-        app_url: process.env.APP_URL_ANDROID || 'bs://4a7889d52224f07e757249e9fc1c47734c5e33b4',
         name: 'single_appium_test',
-        build: 'fox-sample-app',
+        build: 'fox-sample-app-ios',
+        app_url: process.env.APP_URL_SWIFT || 'bs://',
         debug: true,
         unicodeKeyboard: true,
         resetKeyboard: true,

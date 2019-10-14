@@ -1,14 +1,18 @@
+const { join } = require('path')
+const dotenv = require('dotenv')
 const { config } = require('./wdio.shared.conf')
+
+dotenv.config({ path: '../.env' })
 
 // ====================
 // Specify Test Files
 // ====================
 config.specs = [
-    './functionalTests/test/*.js',
+    './functionalTests/test/android/*.js',
 ]
 // Patterns to exclude.
 config.exclude = [
-    './functionalTests/screens/*Page.js',
+    './functionalTests/screens/*.js',
 ]
 
 // ====================
@@ -24,7 +28,7 @@ config.capabilities = [
         'appium:automationName': 'UIAutomator2',
         'appium:unicodeKeyboard': true,
         'appium:resetKeyboard': true,
-        'appium:app': '/Users/eduardo.contreras/Documents/WizelineGitHub/Fox/Android/app-release.apk'
+        'appium:app': process.env.APP_PATH_ANDROID || join(process.cwd(), './apps/app-release.apk')
     },
 ]
 

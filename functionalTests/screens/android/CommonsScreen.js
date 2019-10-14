@@ -1,4 +1,4 @@
-import BaseScreen from '../screens/BaseScreen'
+import BaseScreen from '../BaseScreen'
 
 const ELEMENTS = {
     ALERT_TITLE: 'id=android:id/alertTitle',

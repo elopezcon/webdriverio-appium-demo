@@ -6,6 +6,7 @@ allure
 node_modules/
 reports/
 allure-report/
+apps/
 
 # local env files
 .env.local

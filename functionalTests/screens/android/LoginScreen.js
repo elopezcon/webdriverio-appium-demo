@@ -1,4 +1,4 @@
-import CommonsScreen from '../screens/CommonsScreen'
+import CommonsScreen from '../android/CommonsScreen'
 
 const ELEMENTS = {
     FACEBOOK_TOKEN: 'id=com.fox.android.foxkit.profile.demo:id/edt_facebook_token',

@@ -78,6 +78,16 @@ appium
 ```
 
 ## Steps to run the Appium test suite
+- [ ] Creat a .env file with the following varaibles
+```
+APP_PATH_ANDROID= 
+APP_PATH_SWIFT=
+APP_URL_ANDROID=
+APP_URL_SWIFT=
+
+BROWSERSTACK_USERNAME=
+BROWSERSTACK_ACCESS_KEY=
+```
 - [ ] Make sure that appium server is running.
 - [ ] Ensure an Android emulator is running or an Android device is connected to your local machine.(Connected device requires USB debugging enabled).
-- [ ] Appium requires an .apk file saved in the root of the project to be installed on the test device/emulator.
+- [ ] Appium requires an .apk and .app / .zip / .ipa saved in the root of the project in the folder apps to be installed on the test device/emulator.
